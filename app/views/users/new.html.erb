@@ -1,0 +1,11 @@
+<form action='/users' method='POST'>
+    <p>
+      Ton compte utilisateur :
+    </p>
+    Balance ton nom d'utilisateur: <input type='text' name='user_username'/><br/>
+    Balance ton émail d'utilisateur: <input type='text' name='user_email'/><br/>
+    Balance ta bio : <input type='text' name='user_bio'/><br/>
+    <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+    <input type='submit'/>
+    
+  </form>
