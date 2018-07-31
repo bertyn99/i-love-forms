@@ -9,7 +9,7 @@
     <input type='submit'/>
     
   </form>
-   <%@user.all.for_each do |index|%>
+   <%User.all.for_each do |index|%>
     <%index.username %>
     <%index.email %>
     <%index.bio %>
