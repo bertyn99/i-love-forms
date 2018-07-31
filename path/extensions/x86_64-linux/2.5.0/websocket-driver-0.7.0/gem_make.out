@@ -1,0 +1,15 @@
+current directory: /home/bertyn/Documents/Formation_THP/ruby_on_rail/rails_part/i-love-forms/path/gems/websocket-driver-0.7.0/ext/websocket-driver
+/usr/bin/ruby2.5 -r ./siteconf20180731-2740-1mvl3n3.rb extconf.rb
+creating Makefile
+
+current directory: /home/bertyn/Documents/Formation_THP/ruby_on_rail/rails_part/i-love-forms/path/gems/websocket-driver-0.7.0/ext/websocket-driver
+make "DESTDIR=" clean
+
+current directory: /home/bertyn/Documents/Formation_THP/ruby_on_rail/rails_part/i-love-forms/path/gems/websocket-driver-0.7.0/ext/websocket-driver
+make "DESTDIR="
+compiling websocket_mask.c
+linking shared-object websocket_mask.so
+
+current directory: /home/bertyn/Documents/Formation_THP/ruby_on_rail/rails_part/i-love-forms/path/gems/websocket-driver-0.7.0/ext/websocket-driver
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 websocket_mask.so ./.gem.20180731-2740-sg4cjo
