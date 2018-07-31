@@ -9,8 +9,10 @@
     <input type='submit'/>
     
   </form>
-   <%User.all.for_each do |index|%>
-    <%index.username %>
-    <%index.email %>
-    <%index.bio %>
-     <% end  %>
+  <div>
+   <%User.all.for_each do |users|%>
+    <p><%users.username %></p>
+    <p><%users.email %></p>
+   <p> <%users.bio %></p>
+   </div>
+     < end  %>
