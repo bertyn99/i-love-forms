@@ -1,11 +1,14 @@
 class UsersController < ApplicationController
     def new
-        @users=Users.new
+       
     end
 
     def create
-        @users=params[:user_username]
-        @users=params[:user_email]
-        @users=params[:user_bio]
-    end
+        @post=User.new
+        @post.username =params[:user_username]
+        @post.email =params[:user_email]
+        @post.bio =params[:user_bio]
+        @post.save 
+      
+     end
 end
