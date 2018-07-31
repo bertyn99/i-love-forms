@@ -1,0 +1,20 @@
+<h1 class="text-center">Un formulaire avec form_for !</h1>
+<br>
+<center>
+  <div class="text-center mb-4">
+    <h1 class="h3 mb-3 font-weight-normal">Créer un profil</h1>
+  </div>
+  <%= form_for @post,url: {action: "create_for"}, html: {class: "form-signin w-25"} do |f| %>
+    Username :
+    <%= f.text_field :username, class: "form-control", placeholder: "MyName" %>
+    <br /> <br />
+    Email :
+    <%= f.email_field :email, class: "form-control", placeholder: "something@heyah.com" %>
+    <br /> <br />
+    Bio :
+    <%= f.text_area :bio, class: "form-control", placeholder: "MyBio" %>
+    <br /> <br />
+    <%= f.submit "Créer", class: "btn btn-lg btn-primary btn-block" %>
+    <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+  <% end %>
+</center>

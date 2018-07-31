@@ -1,0 +1,26 @@
+<center><h1>Un formulaire en HTML !</h1></center>
+<br>
+<center>
+  <form action='/new' method="post" class="form-signin w-25 text-center">
+      <div class="text-center mb-4">
+        <h1 class="h3 mb-3 font-weight-normal">Créer un profil</h1>
+      </div>
+      <div class="form-label-group">
+        <label>Username :</label>
+        <input type="text" name="username" id="username" class="form-control" placeholder="MyName" required autofocus>
+      </div>
+      <br>
+      <div class="form-label-group">
+          <label>Email address : </label>
+        <input type="email" name="email" id="email" class="form-control" placeholder="something@heyah.com" required autofocus>
+      </div>
+      <br>
+      <div class="form-label-group">
+        <label>Bio : </label>
+        <input type="text" name="bio" id="bio" class="form-control" placeholder="MyBio" required>
+      </div>
+      <br>
+      <button class="btn btn-lg btn-primary btn-block" type="submit" name="Envoyer">Créer</button>
+      <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+  </form>
+</center>

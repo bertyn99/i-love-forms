@@ -1,0 +1,25 @@
+<h1 class="text-center">Un formulaire avec form_tag !</h1>
+<br>
+
+<%= form_tag url_for(action: 'create_tag'), method: "post", html: {class: "form-signin"} do %>
+<center>
+      <div class="text-center mb-4">
+        <h1 class="h3 mb-3 font-weight-normal">Créer un profil</h1>
+      </div>
+      <div class="form-label-group">
+      <%= label_tag 'Username : ' %>
+      <%= text_field_tag 'username', @post.username, class: "form-control w-25", placeholder: "MyName" %>
+      <br /> <br />
+
+      <%= label_tag 'Email' %>
+      <%= text_field_tag 'email', @post.email, class: "form-control w-25", placeholder: "something@heyah.com"  %>
+      <br /> <br />
+
+      <%= label_tag 'Bio' %>
+      <%= text_area_tag 'bio', @post.bio, class: "form-control w-25", placeholder: "MyBio"  %>
+      <br /> <br />
+
+      <%= submit_tag "Créer", class: "btn btn-lg btn-primary btn-block w-25" %>
+      <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+    <% end %>
+</center>
